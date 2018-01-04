@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
 
 body, html {
     font-family: 'Josefin Sans', sans-serif;
@@ -82,9 +83,10 @@ hr {
 	background-color: rgba(248, 248, 248, 0);
 	border-color: rgba(231, 231, 231, 0);
 }
+
 #menu a.navbar-brand {
-	text-transform: uppercase;
-	font-size: 21px;
+    font-family: 'Yellowtail', cursive;
+	font-size:21px;
 	color: #fff;
 	font-weight: 900;
 }
