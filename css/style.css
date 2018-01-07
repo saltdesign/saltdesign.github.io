@@ -431,7 +431,7 @@ header {
 }
 
 .nav-toggle.active:before {
-  font-size: 24px;
+  font-size: 28px;
   content: "✖"; /* Close icon */
 }
 
