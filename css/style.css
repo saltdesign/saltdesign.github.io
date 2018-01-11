@@ -242,7 +242,7 @@ body {
 --------------------------------------------- */
 
 header {
-    background: #111314;
+    background: #778899;
     position: fixed;
     z-index: 3;
     width: 100%;
@@ -344,7 +344,7 @@ header {
 
 .nav-collapse a {
   text-decoration: none;
-  background: #111314;
+  background: #778899;
   padding: 0.7em 1em;
   color: #888;
   width: 100%;
@@ -431,7 +431,7 @@ header {
 }
 
 .nav-toggle.active:before {
-  font-size: 28px;
+  font-size: 24px;
   content: "✖"; /* Close icon */
 }
 
