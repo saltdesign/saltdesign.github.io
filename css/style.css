@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body, div,
 h1, h2, h3, h4, h5, h6,
@@ -10,7 +10,7 @@ summary, hgroup {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a:active,
@@ -181,13 +181,13 @@ body {
             text-align: center;
         }
     #home h1{
-            font-size: 4em;
+            font-size: 5em;
             padding-top:3em;
         }
     #home p{
-            font-size: 1.1em;
+            font-size: 1.5em;
             padding:0;
-            margin-top: -10px;
+            margin-top: 0px;
         }
 
     #about {
@@ -242,7 +242,7 @@ body {
 --------------------------------------------- */
 
 header {
-    background: #778899;
+    background: #2b83ed;
     position: fixed;
     z-index: 3;
     width: 100%;
@@ -254,9 +254,9 @@ header {
     float: left;
 }
 .logo img {
-    height:40px;
+    height:45px;
     padding-top:7px;
-    padding-left:7px;
+    padding-left:18px;
 }
 
 
@@ -323,13 +323,21 @@ header {
   float: left;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 30em) {
   .nav-collapse {
     float: right;
     width: auto;
   }
 }
-
+#home h1{
+            font-size: 3em;
+            padding-top:5em;
+        }
+ #home p{
+            font-size: 1.5em;
+            padding:0;
+            margin-top: 40px;
+        }
 .nav-collapse li {
   float: left;
   width: 100%;
@@ -344,7 +352,7 @@ header {
 
 .nav-collapse a {
   text-decoration: none;
-  background: #778899;
+  background: #2b83ed;
   padding: 0.7em 1em;
   color: #fff;
   width: 100%;
@@ -422,7 +430,7 @@ header {
   text-transform: none;
   text-align: center;
   position: absolute;
-  content: "\2261"; /* Hamburger icon */
+  content: "☰"; /* Hamburger icon */
   text-indent: 0;
   speak: none;
   width: 100%;
