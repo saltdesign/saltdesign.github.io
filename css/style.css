@@ -138,7 +138,7 @@ header::after {
           transform: translateY(-3px) rotate(-90deg);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 40em) {
   
   .menu-toggle {
     display: none;
