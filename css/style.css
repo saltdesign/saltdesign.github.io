@@ -174,7 +174,7 @@ header::after {
 
     header{
         height:70px;
-        width:auto!important;
+        width:100%;
     }
     
     .logo{
