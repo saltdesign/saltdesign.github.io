@@ -7,6 +7,7 @@ body {
     margin:0;
     padding: 0;
     overflow: hidden;
+    width:100%;
 }
 
 .container {
@@ -50,6 +51,8 @@ header {
     top: 0;
     height:170px;
     border-bottom: solid 1px #333;
+    display:block;
+    min-width:100%;
 }
 
 header::after {
@@ -172,15 +175,20 @@ header::after {
 .contact-header {
     display: none;
 }
-
+    #home h1{
+            font-size: 1.8em!important;
+    }
     header{
         height:70px;
-        max-width: 375px;
     }
     
     .logo{
         height: 60px;
         margin-top:.35em;
+    }
+    
+    .site-nav{
+        position: absolute;
     }
     
     .site-nav a {
@@ -241,7 +249,7 @@ header::after {
     margin-top:-5em;
 }
 
-#home h1{
+    #home h1{
             font-size: 7em;
             padding-top:3em;
             font-family: 'Josefin Sans', sans-serif;
