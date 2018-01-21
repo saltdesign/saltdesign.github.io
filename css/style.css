@@ -4,22 +4,52 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:300,400,500,700,800');
 
 body {
-  font-family: 'Exo', sans-serif;
+    font-family: 'Exo', sans-serif;
+    margin:0;
+    padding: 0;
 }
 
 .container {
   width: 95%;
-  max-width: 1000px;
   margin: 0 auto;
 }
 
+.contact-header {
+    height: 50px;
+    background-color: #333;
+    color:#fff;
+    position: absolute;
+    width:100%;
+    top:0;
+    left:0;
+}
+.contact-header p{
+    line-height: 50px;
+    text-align:center;
+    font-size:18px;
+    margin-top:0;
+}
+.contact-header a{
+    color:#fff;
+    font-size: 20px;
+    line-height: 54px;
+    transition: ease-out .2s;
+}
+.contact-header a:hover
+{
+    color:#33ccff;
+    transition: ease .4s;
+}
+
 header {
-    background: white;
-  padding: 1em 0;
-    height:120px;
-  position: relative;
-    font-weight: 500;
-    border-bottom: 2px solid #333;
+    background: #fff;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height:170px;
+    border-bottom: solid 1px #333;
 }
 
 header::after {
@@ -29,7 +59,7 @@ header::after {
 }
 
 .logo {
-    margin-top:10px;
+    margin-top: 3.7em;
     height: 100px;
     float:left;
 }
@@ -38,7 +68,7 @@ header::after {
   position: absolute;
   top: 100%;
   right: 0%;
-  background: #464655;
+  background: #333;
   -webkit-clip-path: circle(0px at top right);
           clip-path: circle(0px at top right);
   -webkit-transition: -webkit-clip-path ease-in-out 700ms;
@@ -62,7 +92,6 @@ header::after {
 
 .site-nav li {
   border-bottom: 1px solid #575766;
-    line-height: 120px;
 }
 
 .site-nav li:last-child {
@@ -70,17 +99,17 @@ header::after {
 }
 
 .site-nav a {
-  color: #33ccff;
+  color: #333;
   display: block;
-  padding: 0em 4em 0em 1.5em;
-  text-transform: uppercase;
+  padding: 6.2em 3em 6.2em 1.5em!important;
   text-decoration: none;
-        transition: ease-out .3s;
+  transition: ease-out .3s;
+    font-weight: 700;
 }
 
 .site-nav a:hover,
 .site-nav a:focus {
-  color: #000;
+  color: #33ccff;
     transition: ease .3s;
 }
 
@@ -94,10 +123,10 @@ header::after {
 }
 
 .menu-toggle {
-  padding: 2em;
+  padding: 1.5em;
   position: absolute;
-  top: 2.5em;
-  right: 2.5em;
+  top: .65em;
+  right: .65em;
   cursor: pointer;
 }
 
@@ -108,7 +137,7 @@ header::after {
   display: block;
   background: #33ccff;
   height: 3px;
-  width: 2.5em;
+  width: 2em;
   border-radius: 3px;
   -webkit-transition: all ease-in-out 500ms;
   transition: all ease-in-out 500ms;
@@ -138,7 +167,33 @@ header::after {
           transform: translateY(-3px) rotate(-90deg);
 }
 
-@media (min-width: 40em) {
+@media (max-width: 920px) {
+  
+.contact-header {
+    display: none;
+}
+
+    header{
+        height:70px;
+    }
+    
+    .logo{
+        height: 60px;
+        margin-top:.35em;
+    }
+    
+    .site-nav a {
+  color: #fff;
+  display: block;
+  padding: 1.5em 7em 1.5em 1em!important;
+  text-decoration: none;
+  transition: ease-out .3s;
+    font-weight: 700;
+}
+
+}
+
+@media (min-width: 920px) {
   
   .menu-toggle {
     display: none;
@@ -172,4 +227,157 @@ header::after {
     display: none;
   }
   
+}
+
+#home{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/home.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    margin-top:-5em;
+}
+
+#home h1{
+            font-size: 7em;
+            padding-top:3em;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    #home p{
+            font-size: 2em;
+            padding:0;
+            margin-top: 0px;
+        }
+
+    #about {
+      border-bottom: 2px solid #000;
+      padding: 100px 0 0;
+      height: 700px;
+      width: 50%;
+      margin-top: 7em;
+    }
+#about h1{
+        color: #000;
+        font-size: 3em;
+    }
+#about p{
+        color: #333;
+        width:70%;
+        line-height: 20px;
+        margin-top: 15px;
+    }
+#about a
+{
+    display:block;
+    color: #333;
+    padding: 15px 40px 15px 40px;
+    margin-top: 3em;
+    text-decoration: none;
+    font-weight:bold;
+    border: 2px solid #333;
+    width:100px;
+    transition: ease-out .3s;
+}
+#about a:hover
+{
+    background-color:#33CCFF;
+    color: #fff;
+    border: 2px solid #33CCFF;
+    transition: ease .3s;
+}
+/* ------------------------------------------
+  SCROLLER ICON
+--------------------------------------------- */
+.scroll, #scroller{
+    margin-top:7em;
+}       
+.scroll a {
+    margin-top: 7rem;
+    z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.scroll a:hover {
+  opacity: .5;
+}
+#scroller a {
+  padding-top: 60px;
+}
+#scroller a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#scroller a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+#scroller        a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb03 3s infinite;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
