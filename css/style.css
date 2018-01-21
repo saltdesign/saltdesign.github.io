@@ -72,7 +72,7 @@ header::after {
 .site-nav a {
   color: #33ccff;
   display: block;
-  padding: 2em 4em 2em 1.5em;
+  padding: 0em 4em 0em 1.5em;
   text-transform: uppercase;
   text-decoration: none;
         transition: ease-out .3s;
