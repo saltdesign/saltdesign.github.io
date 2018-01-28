@@ -49,7 +49,6 @@ footer{
 footer i{
     color:#fff;
     font-size: 20px!important;
-    margin-top: 
 }
 footer i:hover{
     color:#33ccff;
@@ -274,6 +273,7 @@ header::after {
     }
 #home{
     background-position: -150px -200px;
+    background-repeat: no-repeat;
     height:500px!important;
     }
     
@@ -289,7 +289,6 @@ header{
     }
     
 .site-nav{
-    position: absolute;
     margin:0;
     width: 100%!important;
     }
@@ -302,7 +301,7 @@ header{
       text-decoration: none;
       transition: ease-out .3s;
       font-weight: 500;
-      width: 100%;
+      width: 100%!;
       margin-left:0!important;
 }
 .active {
@@ -332,9 +331,11 @@ header{
     #services-box{
         margin-top:100px!important;
         height:auto!important;
+        margin-right:0px!important;
     }
     #services-box li{
-        width: 100%!important;
+        width: 97%!important;
+        margin-right:0!important;
     }
     
      #services-box a{
@@ -342,7 +343,7 @@ header{
     }
     
     #services-box h1{
-        font-size: 44px!important;
+        font-size: 34px!important;
     }
     
     #services-box ul{
