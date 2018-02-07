@@ -294,6 +294,18 @@ header::after {
     border:5px solid white;
     width:30em;
 }
+#why #facebooklink{
+    text-decoration: none!important;
+    display: inline-block!important;
+    border:none!important;
+    margin:0;
+    width:auto;
+    padding:0;
+}
+#why #facebooklink:hover{
+    color:#33ccff;
+    background-color: white!important;
+}
 
 #why {
     height: auto;
@@ -911,7 +923,8 @@ fieldset {
     display: none;
 }
     .animate-logo img{
-        padding-top:130px!important;
+        width:300px!important;
+        padding-top:180px!important;
     }
      .animate-logo p{
          display: none;
