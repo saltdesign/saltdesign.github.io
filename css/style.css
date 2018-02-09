@@ -948,6 +948,7 @@ fieldset {
     }
 #home{
     height:500px!important;
+    width:100%!important;
     }
     
     #about h1{
