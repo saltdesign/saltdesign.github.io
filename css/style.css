@@ -269,6 +269,7 @@ header::after {
     background-image: url(../img/contact-van.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-repeat: none;
     color: white;
     text-align: center;
     margin-top:-5em;
@@ -925,7 +926,7 @@ fieldset {
 }
     .animate-logo img{
         width:300px!important;
-        padding-top:140px!important;
+        padding-top:240px!important;
     }
      .animate-logo p{
          display: block;
@@ -947,10 +948,7 @@ fieldset {
     margin-top:-10px!important;
     }
 #home{
-    height:500px!important;
-    }
-    #home img{
-            width:100%!important;
+    height:700px!important;
     }
     
     #about h1{
