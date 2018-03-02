@@ -55,7 +55,7 @@ document.onclick=reEnable
         <div class="home-banner-container">
         <center>
             <img id="banner-logo"src="img/logo-white.svg" class="animated item bounceInLeft">
-           
+           <img id="banner-logo-stacked"src="img/logo-stacked.svg" class="animated item bounceInLeft">
             <a href="#about" class="to-about"><i class="fa fa-angle-down animated item bounce"></i></a>
         </center>
         </div>
@@ -65,8 +65,9 @@ document.onclick=reEnable
     <div id="about">
         <div class="about-anchor"></div>
     <h1>About Me</h1>
-        <p id="font-white-lightitalic">Web Design, Brand Identity & Digital Graphics <br>designed and built according to the trends of 2018</p>
-        <p id="font-white-light">I'm <span id="font-blue-light-italic">GAVIN SALT </span>and I am a freelance <span id="font-blue-light-italic">WEB DESIGNER</span></p>
+        <p id="font-white-lightitalic">Web Design, Brand Identity & Digital Graphics designed and built according to the trends of 2018</p>
+        <p class="un-responsive-about"id="font-white-light">I'm <span id="font-blue-light-italic">GAVIN SALT </span>and I am a freelance <span id="font-blue-light-italic">WEB DESIGNER</span></p>
+        <p class="responsive-about" id="font-white-light">I'm <span id="font-blue-light-italic">GAVIN SALT </span>and I am a <br> freelance <span id="font-blue-light-italic">WEB DESIGNER</span></p>
         <img src="img/about-charactor.svg"s id="about-charactor">
         <div id="what-i-do">
         <h1>What do I do?</h1>
@@ -75,7 +76,7 @@ document.onclick=reEnable
         <img id="about-responsive-img" src="img/responsive.png">
         
         <div id="web-design">
-            <div id="angle"><img src="img/angle.svg"></div>
+            <div id="angle"><img src="img/angle.png"></div>
         <h1 id="web-design-title">Website Design & Development</h1>
         <p id="font-grey-light">I design every pixel from the ground up, using <span id="font-blue-light-italic">CSS </span>, <span id="font-blue-light-italic">HTML </span>& <span id="font-blue-light-italic">JAVSCRIPT </span>to make your customers experience strikingly unique and memorable. The web is often a potential customers’ first experience with your brand. Making sure your website has an impact at first glance is very important.
         </p>
@@ -88,15 +89,15 @@ document.onclick=reEnable
         </div>
         
                 <div id="prices">
-            <div id="angle"><img src="img/angle-white.svg"></div>
+            <div id="angle"><img src="img/angle-white.png"></div>
         <h1>Price</h1>
-        <p id="font-white-light">A basic website starts as low as <span id="font-blue-light-italic">£300</span> depending on various things, for example if you wish to re-vamp an exsiting site or start from scratch.</p> <br>
+        <p id="font-white-light">A basic website starts as low as <span id="font-blue-light-italic">£300</span> depending on various things, for example if you wish to update an exsiting site or start from scratch.</p> <br>
             <p id="font-white-lightitalic">For a free quote contact me and we can disucss your requirements.</p>
             <a href="#contact">Contact Me</a>
 
         </div>
         <div id="portfolio">
-            <div id="angle"><img src="img/angle-flipped.svg"></div>
+            <div id="angle"><img src="img/angle-flipped.png"></div>
             <h1>My Work</h1>
         <p id="font-grey-light">Here is a collection of some of my work</p>
             <div class="portfolio-cards">
@@ -121,7 +122,15 @@ document.onclick=reEnable
     </center>
     
     <center>
+        
     <div id="contact">
+        <div id="contact-details-responsive">
+                <h2>Contact Details</h2>
+                <i class="fa fa-envelope"> <p>gavin@saltdesignwebprint.com</p></i><br>
+                <i class="fa fa-phone"> <p>07713 558513</p></i><br>
+                <i class="fa fa-facebook"> <p>@ S A L T D E S I G N</p></i><br>
+                <i class="fa fa-linkedin"><p> @GavinSalt</p></i>
+                </div>
         <div id="form-container">
             
 
@@ -137,22 +146,22 @@ document.onclick=reEnable
             <input id="form-button" type="submit" value = "Send">
             </form>
                 </div>
-            
             <div id="contact-details">
                 <h2>Contact Details</h2>
-            <i class="fa fa-envelope"> <p>gavin@saltdesignwebprint.com</p></i><br>
+                <i class="fa fa-envelope"> <p>gavin@saltdesignwebprint.com</p></i><br>
                 <i class="fa fa-phone"> <p>07713 558513</p></i><br>
                 <i class="fa fa-facebook"> <p>@ S A L T D E S I G N</p></i><br>
                 <i class="fa fa-linkedin"><p> @GavinSalt</p></i>
             </div>
         </div>
-                  <div class="copyright-info"><p>Copyright &copy; <span id="copyright-bold"> 2018 S A L T D E S I G N</span></p></div>
     </div>
     </center>
     
     
     <footer>
-    	
+        <center>
+    	<div class="copyright-info"><p>Copyright &copy; <span id="copyright-bold"> 2018 S A L T D E S I G N</span></p></div>
+            </center>
     </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   
