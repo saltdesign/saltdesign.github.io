@@ -389,7 +389,8 @@ background:white;
 }
 
 .portfolio-cards ul{
-    margin-top:30px;;
+    margin-top:130px;
+    margin-bottom:130px;
     padding:0;
     width:100%;
     list-style: none;
@@ -400,13 +401,11 @@ background:white;
     width:47%;
     display: inline-block;
     background:white;
-    -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.25);
-    box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.15);
     opacity: .8;
     transition: ease-out opacity .2s;
-    border: .1px solid white;
-    border-radius:20px;
 }
 .portfolio-cards li:hover{
     opacity: 1;
@@ -525,7 +524,7 @@ background:white;
     width: 90%;
     display:inline-block;
     margin-top: -300px;
-        margin-bottom: 100px;
+    margin-bottom: 100px;
     padding-top:50px;
     padding-bottom:50px;
 }
@@ -550,6 +549,21 @@ background:white;
 }
 
 @media (max-width: 800px) {
+    #portfolio{
+    padding-bottom: 170px;
+}
+    #published-on{
+        float:left!important;
+        display:block!important;
+        margin: 0px!important;
+        padding: 23px!important;
+    }
+    .portfolio-cards a{
+        margin-top: 20px!important;
+    }
+        .portfolio-cards li{
+        margin-bottom: 0px!important;
+    }
     
         #banner-logo{
         display: none;
@@ -562,7 +576,11 @@ background:white;
     }
     
     #about{
-    margin-top:-100px;
+    margin-top:-200px;
+}
+        
+    #what-i-do{
+    margin-top:-70px;
 }
     .responsive-about{
         display:block!important;
@@ -571,53 +589,57 @@ background:white;
         display:none!important;
     }
     
-    #portfolio{
-{
-            
-        }
+    h1{
+        font-size:50px!important;
+    }
+    #web-design-title{
+        font-size:50px!important;
     }
     
+    p{
+        width:90%;
+    }
     
 #font-white-lightitalic{
     font-weight:400;
     color: #fff;
     font-style: italic;
-    font-size: 30px;
+    font-size: 27px;
     padding:0;
     margin:0;
-    line-height:28px;
-    width:97%;
+    line-height:27px;
+    width:90%;
 }
 #font-white-light{
     font-weight:28px;
     color: #fff;
-    font-size: 30px;
+    font-size: 27px;
     padding:0;
     margin:10px;
-    line-height:28px;
+    line-height:27px;
     max-width:750px;
     z-index:10;
-    width:97%;
+    width:90%;
 }
 #font-grey-light{
     font-weight:300;
     color: #393b3e;
-    font-size: 28px;
+    font-size: 27px;
     padding:0;
     margin:10px;
-    line-height:28px;
+    line-height:27px;
     max-width:750px;
     z-index:10;
-    width:97%;
+    width:90%;
 }
 #font-blue-light-italic{
     font-weight:300;
     color: #2191ed;
     font-style: italic;
-    font-size: 28px;
+    font-size: 27px;
     padding:0;
     margin:0px;
-    line-height:28px;
+    line-height:27px;
     z-index:10;
 }
     
@@ -720,8 +742,8 @@ background:white;
 }
     
 header img{
-    height:70px;
-    padding: 3.5px 14px;
+    height:60px;
+    padding: 7.5px 14px;
     display: inline-block;
     float: left;
 }
@@ -792,3 +814,56 @@ header img{
   }
   
 }
+
+.bounce {
+	-moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
