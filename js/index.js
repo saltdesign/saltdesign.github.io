@@ -5,9 +5,6 @@ $('.menu-toggle').click(function() {
   
 })
 
-
-
-
 $(".to-home").click(function() {
     $('html, body').animate({
         scrollTop: $("#home").offset().top
@@ -31,3 +28,19 @@ $(".to-contact").click(function() {
         scrollTop: $("#contact").offset().top
     }, 2000);
 });
+
+document.addEventListener("contextmenu", function(e){
+e.preventDefault();
+}, false);
+//courtesy of BoogieJack.com
+function killCopy(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+document.onmousedown=killCopy
+document.onclick=reEnable
+}
