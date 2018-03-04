@@ -1,10 +1,3 @@
-$('.menu-toggle').click(function() {
-  
-  $('.site-nav').toggleClass('site-nav--open', 500);
-  $(this).toggleClass('open');
-  
-})
-
 $(".to-home").click(function() {
     $('html, body').animate({
         scrollTop: $("#home").offset().top
