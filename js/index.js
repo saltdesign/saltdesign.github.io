@@ -31,14 +31,3 @@ $(".to-contact").click(function() {
         scrollTop: $("#contact").offset().top
     }, 2000);
 });
-
-
-
-
-
-$(document).ready(function(){
-    $("#show").click(function(){
-        $("h2").show();
-        this.style.display = 'none'
-    });
-});

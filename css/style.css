@@ -785,7 +785,7 @@ background:white;
 header img{
     height:60px;
     padding: 7.5px 14px;
-    display: inline-block;
+    display: none;
     float: left;
 }
     
