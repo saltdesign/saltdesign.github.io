@@ -74,14 +74,24 @@ header img{
 .home-banner{
     display: block;
     height:670px;
-    background-image: url(../img/computer-faded.png);
-    background-position:bottom;
-    -webkit-background-color:#393b3e;
-    -moz-background-color:#393b3e;
-    -o-background-color:#393b3e;
-    background-color:#393b3e;
-    overflow: hidden;
+    
+        -webkit-background-image: url(../img/computer-faded.png);
+        -o-background-image: url(../img/computer-faded.png);
+        -moz-background-image: url(../img/computer-faded.png);
+        background-image: url(../img/computer-faded.png);
+    
+        -moz- background-position:bottom;
+        -webkit- background-position:bottom;
+        -o- background-position:bottom;
+        background-position:bottom;
+    
+        -webkit-background-color:#393b3e;
+        -moz-background-color:#393b3e;
+        -o-background-color:#393b3e;
+        background-color:#393b3e;
+        overflow: hidden;
 }
+
 .home-banner img{
     display: inline-block;
     max-width:1200px;
@@ -123,6 +133,9 @@ header img{
     width:300px;
     height:10px;
     background-color:#393b3e;
+    -webkit-background-color:#393b3e;
+    -moz-background-color:#393b3e;
+    -o-background-color:#393b3e;
     z-index: 200;
 }
 
@@ -218,6 +231,10 @@ header img{
     margin-top:30px;
     width: 170px;
     background: none;
+    -o-background: none;
+    -moz-background: none;
+    -webkit-background: none;
+    background: none;
     font-family: 'Barlow Condensed', sans-serif;
     cursor: pointer;
     transition: ease-out .2s;
@@ -245,6 +262,9 @@ header img{
 }
 #web-design{
     background-color: white;
+    -webkit-background-color: white;
+    -o-background-color: white;
+    -moz-background-color: white;
     padding-bottom: 40px;
 }
 
@@ -255,11 +275,15 @@ header img{
     display: block;
     max-width:1050px;
     background:#2191ed;
+    -webkit-background:#2191ed;
+    -moz-background:#2191ed;
+    -o-background:#2191ed;
     height:580px;
     margin-top:-200px;
     margin-bottom:100px;
     -webkit-box-shadow: 1px 1px 35px 0px rgba(0,0,0,0.29);
     -moz-box-shadow: 1px 1px 35px 0px rgba(0,0,0,0.29);
+    -o-box-shadow: 1px 1px 35px 0px rgba(0,0,0,0.29);
     box-shadow: 1px 1px 35px 0px rgba(0,0,0,0.29);
     z-index: 500!important;
 }
@@ -275,6 +299,9 @@ header img{
     text-align: left;
     width:60%;
     background:white;
+    -webkit-background:white;
+    -o-background:white;
+    -moz-background:white;
     color: #778899;
     font-size: 15px;
     font-weight:600;
@@ -296,6 +323,9 @@ textarea{
 }
 input,textarea{
     background: none;
+    -webkit-background: none;
+    -o-background: none;
+    -moz-background: none;
     border:2px #778899 solid;
     border-radius: 5px;
     margin-top:5px;
@@ -346,9 +376,13 @@ form #form-button{
 }
 form #form-button:hover {
     background: #2191ed;
+    -webkit-background: #2191ed;
+    -o-background: #2191ed;
+    -moz-background: #2191ed;
     transition: ease-in .4s;
     -webkit-box-shadow: rgba(0,0,0,0.75);
     -moz-box-shadow: rgba(0,0,0,0.75);
+    -o-box-shadow: rgba(0,0,0,0.75);
     box-shadow: rgba(0,0,0,0.75);
 }
 
@@ -368,6 +402,9 @@ form #form-button:hover {
 #prices a:hover{
     color:white;
     background:#2191eb;
+    -webkit-background:#2191eb;
+    -o-background:#2191eb;
+    -moz-background:#2191eb;
     border: 2px #2191eb solid;
     transition: background, border, ease-in .2s;
 }
@@ -379,6 +416,9 @@ form #form-button:hover {
 /*PORTFOLIO*/
 #portfolio{
 background:white;
+-webkit-background:white;
+-o-background:white;
+-moz-background:white;
     padding-bottom: 300px;
 }
 
@@ -572,11 +612,12 @@ background:white;
         display: block;
     }
     #home a{
-        display: none;
+        font-size: 50px;
+        margin-top: 20px;
     }
     
     #about{
-    margin-top:-200px;
+    margin-top:-120px;
 }
         
     #what-i-do{
@@ -757,13 +798,16 @@ header img{
   
   .site-nav {
       background:none!important;
+      -webkit-background:none!important;
+      -moz-background:none!important;
+      -o-background:none!important;
       position: absolute!important;
       top:0px;
       right:30px;
       height:77px!important;
-    display: inline-block!important;
-    float: right!important;
-    clip-path: initial!important;
+      display: inline-block!important;
+      float: right!important;
+      clip-path: initial!important;
   }
     
     .site-nav ul{
